@@ -11,15 +11,18 @@ setInterval(updateTime, 1000); // Then update the time every second
 // Change greeting text and background
 const hour = new Date().getHours();
 
+console.log(hour)
+
 let hi;
-if (hour < 12) {
+if (hour <= 12) {
     hi = 'good morning, anon.';
     document.body.style.backgroundImage = "url('./assets/bg/dark-starry-night.jpg')"
 
 } else if (hour < 18) {
     hi = 'good afternoon, anon.';
-    document.body.style.backgroundImage = "url('./assets/bg/dark-dark-mountains.jpg')"
-} else {
+    document.body.style.backgroundImage = "url('./assets/bg/dark-mountains.jpg')"
+} else if (hour > 18){
+    console.log("Retard")
     hi = 'good evening, anon.';
     document.body.style.backgroundImage = "url('./assets/bg/dark-moon.jpg')"
 
