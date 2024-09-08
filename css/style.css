@@ -30,7 +30,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
+    transition: background-image 0.5s ease-in-out;
+    
     /* Disable the next line if you want proper text cases */
     text-transform: lowercase;
 }
